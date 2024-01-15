@@ -9,4 +9,4 @@ This project creates a slicing UI for the Starbucks app. The purpose of making t
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
-![Splash Screen](/assets/screenshot/splash-screen.png?raw=true "Splash Screen")
+![Splash Screen](./assets/screenshot/splash-screen.png?raw=true "Splash Screen")
