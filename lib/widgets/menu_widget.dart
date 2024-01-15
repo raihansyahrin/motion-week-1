@@ -23,9 +23,10 @@ class _MenuWidgetState extends State<MenuWidget> {
       onTap: () => Navigator.push(context,
           MaterialPageRoute(builder: (context) => ProductDetailScreen())),
       child: Container(
+        margin: EdgeInsets.symmetric(vertical: 10),
         height: 361.73,
         child: ListView.separated(
-          padding: EdgeInsets.only(left: 20),
+          padding: EdgeInsets.only(left: 20, right: 20),
           scrollDirection: Axis.horizontal,
           shrinkWrap: true,
           itemBuilder: (context, index) {

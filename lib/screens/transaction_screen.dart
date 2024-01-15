@@ -37,7 +37,6 @@ class TransactionScreen extends StatelessWidget {
         ],
       ),
       body: SafeArea(
-        // bottom: false,
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: SingleChildScrollView(

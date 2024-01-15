@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:raihansyahrin_motionintern_week_1/screens/home_screen.dart';
-import 'package:raihansyahrin_motionintern_week_1/screens/product_detail_screen.dart';
 import 'package:raihansyahrin_motionintern_week_1/screens/splash_screen.dart';
 
 void main() {
@@ -26,9 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-// return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       theme: new ThemeData(scaffoldBackgroundColor: const Color(0xFFFCFFFE)),
-//       home: SplashScreen(),
-//     );

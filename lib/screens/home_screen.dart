@@ -43,56 +43,58 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          SizedBox(height: 30),
-          Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: 20,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Our way of loving \nyou back',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
-                ),
-                SizedBox(height: 30),
-                SearchField(),
-                SizedBox(height: 20),
-              ],
-            ),
-          ),
-          CategorySelector(),
-          SizedBox(height: 30),
-          Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: 20,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Popular',
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w500,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 30),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 20,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Our way of loving \nyou back',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
                   ),
-                ),
-                Text(
-                  'See All',
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w500,
-                    color: Color(0xFF00623B),
-                  ),
-                ),
-              ],
+                  SizedBox(height: 30),
+                  SearchField(),
+                  SizedBox(height: 20),
+                ],
+              ),
             ),
-          ),
-          SizedBox(height: 10),
-          MenuWidget(),
-        ],
+            CategorySelector(),
+            SizedBox(height: 30),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 20,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Popular',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  Text(
+                    'See All',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF00623B),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+            MenuWidget(),
+          ],
+        ),
       ),
     );
   }
