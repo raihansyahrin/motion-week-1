@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:raihansyahrin_motionintern_week_1/screen/transaction_screen.dart';
+import 'package:raihansyahrin_motionintern_week_1/screens/transaction_screen.dart';
 
 class ProductDetailScreen extends StatefulWidget {
   const ProductDetailScreen({super.key});
@@ -19,9 +19,12 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         surfaceTintColor: Color(0xFFFCFFFE),
         backgroundColor: Color(0xFFFCFFFE),
         elevation: 0,
-        leading: Icon(
-          Icons.chevron_left_rounded,
-          size: 40,
+        leading: GestureDetector(
+          onTap: () => Navigator.pop(context),
+          child: Icon(
+            Icons.chevron_left_rounded,
+            size: 40,
+          ),
         ),
         title: Container(
           child: Image.asset(

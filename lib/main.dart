@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:raihansyahrin_motionintern_week_1/screen/home_screen.dart';
-import 'package:raihansyahrin_motionintern_week_1/screen/product_detail_screen.dart';
+import 'package:raihansyahrin_motionintern_week_1/screens/home_screen.dart';
+import 'package:raihansyahrin_motionintern_week_1/screens/product_detail_screen.dart';
 
 void main() {
   runApp(MyApp());
